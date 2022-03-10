@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script
+      src="https://kit.fontawesome.com/333e7190ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header_left">
+        <h3 class="header_title">Coder's Bay</h3>
+        <div class="header_search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="header_right">
+        <div class="headerOption">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        
+        <div class="headerOption">
+          <a href="{% url 'profile' %}"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="headerOption"></div>
+      </div>
+    </div>
+
+    <main>
+      <div class="post-container">
+          {% for post in posts %}
+          <div class="post">
+            <h2>Harsh Nagpal</h2>
+            <hr />
+            {{post.text}}
+            <div class="post_items">
+              <a href="" class="post_buttons"><i class="fa-solid fa-heart"></i></a>
+              <a href="" class="post_buttons"><i class="fa-solid fa-comment"></i></a>
+            </div>
+            </div>
+
+        {% endfor %}
+          
+      </div>
+      <div class="recommendations-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/150x150" alt="">
+    <a class="name" href="">Dharamvir</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150x150" alt="">
+            <a href="" class="name">Sampat</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150x150" alt="">
+            <a href="" class="name">Panchuri</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150x150" alt="">
+
+            <a href="" class="name">Omendra</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150x150" alt="">
+            <a href="" class="name">Aaysha</a>
+        </div>
+    </div>        
+    
+    </main>
+  </body>
+</html>
