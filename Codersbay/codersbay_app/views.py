@@ -61,3 +61,9 @@ def like_post(request, id):
     print(user)
     print(liked_post)
     return HttpResponse('Liked')
+
+def complete_profile(request):
+    return render(request, 'codersbay_app/complete_profile.html')
+
+def complete_tech(request):
+    return render(request, 'codersbay_app/complete_tech.html')
