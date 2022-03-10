@@ -7,4 +7,6 @@ urlpatterns = [
     path('like_post/<int:id>', views.like_post, name="like_post"),
     path('complete_profile', views.complete_profile, name="complete_profile"),
     path('complete_tech', views.complete_tech, name="complete_tech"),
+    path('profile', views.profile, name="profile"),
+
 ]

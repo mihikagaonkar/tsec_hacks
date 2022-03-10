@@ -67,3 +67,5 @@ def complete_profile(request):
 
 def complete_tech(request):
     return render(request, 'codersbay_app/complete_tech.html')
+def profile(request):
+    return render(request, 'codersbay_app/profile.html')

@@ -94,3 +94,8 @@ body {
     font-weight: 600;
     color: #20dbc2;
   }
+  a i
+  {
+    color: black;
+    text-decoration: none;
+  }
